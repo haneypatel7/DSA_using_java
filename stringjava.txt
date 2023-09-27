@@ -1,0 +1,41 @@
+compare two string
+
+name1.compareTo(name1)
+String are immutable;
+
+here is both string are same return 0;
+name1 is greater than name2 return 1;
+last case return -1;
+
+index start with zero 0
+name="haneypatel"
+sub=name.substring(5,10)
+return -patel
+substring(startindex,endingindex);
+
+ 
+
+
+String builder 
+in java strings are immutable so that we can't change the string
+and very compilacate to oparate the string thats why java 
+have function called string buider
+
+string builder naf  (function) notation
+
+create string builder
+
+Stringbuilder sb=new Stringbuilder("haney");
+sb.insert(2,'n')
+haney
+hanney its a output
+
+sb.delete(2,4) here 4 index char its not include
+
+
+adding the charcter at start last index
+
+sb.append("hy")
+
+haney
+haneyhy its a output
