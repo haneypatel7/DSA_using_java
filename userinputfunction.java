@@ -16,6 +16,5 @@ class userinputfunction {
         int c=sum(a,b);
         System.out.println("your sum is"+ c);
         
-        
     }
 }
