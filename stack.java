@@ -1,31 +1,29 @@
-import java.util.*;
-class stack
-{
-    int n=10;
+import java.util.Scanner;
+class Stack {
+    int n=5;
+    int []a=new int[5];
     int top=-1;
-    int []a=new int[n];
-    int i;
-    
     void push()
     {
-         if(top==(n-9))
-         {
-             System.out.println("Stack is overflow");
-         }
-         else
-         {   
-             System.out.println("enter the data");
-             int i=sc.nextInt();
-             top=top+1;
-             a[top]=i;
-         }
+        if(top==(n-1))
+        {
+            System.out.println("stack is overflow");
+        }
+        else
+        {
+            System.out.println("enter the element");
+            Scanner sc=new Scanner(System.in);
+            int i=sc.nextInt();
+            top=top+1;
+            a[top]=i;
+            System.out.println("item inserted");           
+        }
     }
-    
     void pop()
     {
         if(top==-1)
         {
-            System.out.println("stack is underflow/empty");
+            System.out.println("stack is empty");
         }
         else
         {
@@ -33,13 +31,23 @@ class stack
             System.out.println("item deleted");
         }
     }
+    void display()
+    {
+        for(int j=top;j>=0;j--)
+        {
+            System.out.println(""+a[j]); 
+        }
+    }  
 }
-class stack_array
+class temp
 {
     public static void main(String[] args)
-    {   
-        Scanner sc = new Scanner(System.in);
-        stack s=new stack();
+    {
+        Scanner sc=new Scanner(System.in);
+        Stack s=new Stack();
         s.push();
+        s.display();
+        s.push();
+        s.display();
     }
 }
