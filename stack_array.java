@@ -1,5 +1,5 @@
 import java.util.Scanner;
-class Stack {
+class stack {
     int n=5;
     int []a=new int[5];
     int top=-1;
@@ -39,12 +39,12 @@ class Stack {
         }
     }  
 }
-class temp
+class stack_array
 {
-    public static void main(String[] args)
+    public static void main (String[] args)
     {
         Scanner sc=new Scanner(System.in);
-        Stack s=new Stack();
+        stack s=new stack();
         s.push();
         s.display();
         s.push();
