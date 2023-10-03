@@ -1,0 +1,2 @@
+we direclty access the method in main class ,we called and use not 
+see how to work;
