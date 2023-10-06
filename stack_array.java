@@ -1,4 +1,5 @@
 import java.util.Scanner;
+//static stack
 class stack {
     int n=5;
     int []a=new int[5];
