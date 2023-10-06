@@ -1,0 +1,14 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
+class HelloWorld {
+    public static void main(String[] args) 
+    {
+int temp,a,b;
+a=1;b=2;
+temp=a; //here a value store in temp then a is empty;
+a=b; //now empty a has store b value then b is empty;
+b=temp; //n=then first step temp have a value give to empty b variable;
+        System.out.println(b);
+    }
+}
