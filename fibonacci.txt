@@ -1,0 +1,22 @@
+import java.util.Scanner;
+class fibonacci
+{   
+    public static void main(String[] args)
+    {
+    Scanner sc =new Scanner(System.in);
+    int x=0;
+    int y=1;
+    int z=0;
+    int n=sc.nextInt();
+        while(z<=n)
+        {
+            x=y;
+            y=z;
+            z=x+y;
+            System.out.println(z);
+        }
+        // System.out.println(z);
+    }
+    
+    
+}
