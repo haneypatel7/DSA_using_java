@@ -1,0 +1,65 @@
+import java.util.Scanner;
+public class queue
+{   
+    
+    int q[];
+    void queue(int n)
+    {
+        q=new int[n];
+        int front,rear;
+        front=-1;
+        rear=-1;
+        System.out.println("your queue size is"+n);
+    }
+    
+    void enque(int n)
+    {   
+        int front,rear;
+        front=-1;
+        rear=-1;
+        if(rear==(n-1))
+        {
+            System.out.println("queue is full");
+        }
+        else
+        {
+            Scanner sc=new Scanner(System.in);
+            System.out.println("enter the element");
+            int a=sc.nextInt();
+            rear++;
+            q[rear]=a;
+        }
+    }
+    void deque()
+    {   
+        int front,rear;
+        front=-1;
+        rear=-1;
+        if(front==-1 && rear==-1)
+        {
+            System.out.println("queue is empty");
+        }
+    }
+    void display()
+    {   
+        int front,rear;
+        int n=5;
+        front=-1;
+        rear=-1;
+        for(int j=0;j<n-1;j++)
+        {
+            System.out.println(q[n]);
+        }
+    }
+        
+        public static void main(String[] args)
+        {
+            queue q=new queue();
+            q.queue(5);
+            q.enque(5);
+            // q.deque();
+            q.display();
+            
+        }
+    
+}
