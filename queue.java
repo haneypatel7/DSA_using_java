@@ -39,6 +39,18 @@ void enqueue()
         }
     }
 }
+
+    void dequeue()
+    {
+        if(f==-1 && r==-1)
+        {
+            System.out.println("Stack is empty");
+        }
+        else{
+            f--;
+            System.out.println("element removed");
+        }
+    }
     public static void main()
     {
         Scanner sc=new Scanner(System.in);
