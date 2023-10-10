@@ -12,17 +12,19 @@ void enqueue()
 
 
     if(r==(n-1))
-    {
+    {   
+        Scanner sc =new Scanner(System.in);
         System.out.println("queue is full");
     }
     else
     {   
-        
+        Scanner sc =new Scanner(System.in);
         System.out.println("enter the data");
         int i=sc.nextInt();
         
         if(f==-1 && r==-1)
-        {
+        {   
+            
             f=0;
             r=0;
             q[r]=i;
@@ -30,6 +32,7 @@ void enqueue()
         }
         else
         {
+            
             r++;
             q[r]=i;
             System.out.println("element inserted");
