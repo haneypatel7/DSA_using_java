@@ -7,7 +7,7 @@ class linearsearch
         int [] array=new int[5];
         Scanner sc=new Scanner(System.in);
         System.out.println("enter the five(5) element");
-
+//lll
         for(int i=0;i<=4;i++)
         {
             array[i]=sc.nextInt();
@@ -27,7 +27,7 @@ class linearsearch
                 System.out.println("your index is"+i);
             }
         }
-
+//0(n^3)
     }
 
 }
