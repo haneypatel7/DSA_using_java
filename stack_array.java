@@ -1,5 +1,5 @@
 import java.util.Scanner;
-//static stack
+
 class stack {
     int n=5;
     int []a=new int[5];
@@ -43,10 +43,10 @@ class stack {
 class stack_array
 {
     public static void main (String[] args)
-    {   
+    {
 
+        int l,d;
         Scanner sc=new Scanner(System.in);
-        int d,l;
         stack s=new stack();
         // s.push();
         // s.display();
@@ -75,8 +75,6 @@ class stack_array
                             s.display();
                             break;
                         }
-
-
                 }
                 System.out.println("0 press to back menu");
                 System.out.println("enter any key to exit the menu");
