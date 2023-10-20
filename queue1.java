@@ -1,6 +1,6 @@
 import java.util.Scanner;
 //using array
-public class queue
+public class queue1
 {   
     int front=-1;
     int rear=-1;
@@ -51,7 +51,7 @@ public class queue
     void display()
     {   
        
-        for(int j=front;j<=rear;j++)
+        for(int j=0;j<=rear;j++)
         {
             System.out.println("value is"+q[j]);
         }
@@ -59,16 +59,43 @@ public class queue
         
         public static void main(String[] args)
         {   
+
+            int d,l;
             Scanner sc =new Scanner(System.in);
-            queue q=new queue();
-     
-            q.enqueue();
-            q.enqueue();
-            q.enqueue();
-            
-            q.display();
-            q.dequeue();
-            q.display();
+            queue1 q=new queue1();
+
+            do{
+
+
+                System.out.println("1 to enqueue data");
+                System.out.println("2 to dequeue data");
+                System.out.println("3 to display data");
+                d=sc.nextInt();
+
+                switch(d)
+                {
+                        case 1:
+                            {
+                            q.enqueue();
+                            }
+
+                            case 2:
+                                {
+                            q.dequeue();
+                                }
+
+                            case 3:
+                                {
+                            q.display();
+                                }
+
+                }
+                System.out.println("0 press to back menu");
+                System.out.println("press any key to exit menu");
+                l=sc.nextInt();
+
+            }while(l==0);
+           
             
         }
     
