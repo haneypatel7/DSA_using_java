@@ -18,7 +18,7 @@ public class linked_list
     {
         int data,n;
         Scanner sc=new Scanner(System.in);
-        do{
+        // do{
         System.out.println("enter the data");
         data=sc.nextInt();
         node new_node=new node(data);
@@ -32,9 +32,9 @@ public class linked_list
                     new_node.next=head;
                     head=new_node;
                 }
-        System.out.println("enter 1 if you add more data");
-        n=sc.nextInt();
-            } while(n==1);
+        // System.out.println("enter 1 if you add more data");
+        // n=sc.nextInt();
+        //     } while(n==1);
         
     }
     
@@ -61,9 +61,34 @@ public class linked_list
     
     public static void main(String[] args)
     {
+        Scanner sc =new Scanner(System.in);
         linked_list ll=new linked_list();
-        ll.creation();
-        ll.display();
+        int i,l;
+        // ll.creation();
+        // ll.display();
+        do{
+        System.out.println("press 1 to enter the data at the start possion");
+        System.out.println("press 2 to display the data");
+                    i=sc.nextInt();
+
+                    switch(i)
+                    {
+                            case 1:
+                                {
+                                    ll.creation();
+                                    break;
+                                }
+                            case 2:
+                                {
+                                    ll.display();
+                                    break;
+                                }
+
+                    }
+                  System.out.println("press 0 to main menu");
+                  System.out.println("press any key to exit the menu");
+                  l=sc.nextInt();  
+        }while(l==0);
     }
     
 }
