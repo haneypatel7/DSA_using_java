@@ -43,12 +43,47 @@ class stack {
 class stack_array
 {
     public static void main (String[] args)
-    {
+    {   
+
         Scanner sc=new Scanner(System.in);
+        int d,l;
         stack s=new stack();
-        s.push();
-        s.display();
-        s.push();
-        s.display();
+        // s.push();
+        // s.display();
+        // s.push();
+        // s.display();
+        do{
+
+                System.out.println("1 to push element");
+                System.out.println("2 to pop element");
+                System.out.println("3 to display element");
+                d=sc.nextInt();
+                switch(d)
+                {
+                    case 1:
+                        {
+                            s.push();
+                            break;
+                        }
+                    case 2:
+                        {
+                            s.pop();
+                            break;
+                        }
+                    case 3:
+                        {
+                            s.display();
+                            break;
+                        }
+
+
+                }
+                System.out.println("0 press to back menu");
+                System.out.println("enter any key to exit the menu");
+                l=sc.nextInt();
+
+
+        }while(l==0);
+
     }
 }
