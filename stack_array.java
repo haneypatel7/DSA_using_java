@@ -45,7 +45,7 @@ class stack_array
     public static void main (String[] args)
     {
 
-        int l,d;
+        int l,d;tus
         Scanner sc=new Scanner(System.in);
         stack s=new stack();
         // s.push();

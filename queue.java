@@ -55,6 +55,8 @@ void enqueue()
     {
         Scanner sc=new Scanner(System.in);
         queue q=new queue();
+
+        
         q.enqueue();
     }
 }
