@@ -2,67 +2,59 @@ import java.util.Scanner;
 
 public class NameLinked {
 
-    static class node
-    {
+    static class Node {
         int number;
         String name;
-        node next;
+        Node next;
 
-        node(int number,String name)
-        {
-            this.number=number;
-            this.name=name;
-            this.next=null;
+        Node(int number, String name) {
+            this.number = number;
+            this.name = name;
+            this.next = null;
         }
     }
 
-    node head=null;
-        public void creation()
-        {
-            Scanner sc=new Scanner(System.in);
-            System.out.println("enter the number");
-            int number=sc.nextInt();
-            System.out.println("enter the name");
-            String name=sc.nextLine();
-            node Student=new node(number,name);
+    Node head = null;
 
-            if(head==null)
-            {
-                head=Student;
-            }
-            else
-            {
-                Student.next=head;
-                head=Student;
+    public void creation() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the number");
+        int number = sc.nextInt();
+        System.out.println("Enter the name");
+        String name = sc.next();
+        Node new_node = new Node(number, name);
+
+        if (head == null) {
+            head = new_node;
+        } else {
+            new_node.next = head;
+            head = new_node;
+        }
+    }
+
+    public void display() {
+        Node temp = head;
+        if (temp == null) {
+            System.out.println("The list is empty.");
+        } else {
+            System.out.println("Student Records:");
+            while (temp != null) {
+                System.out.println("Number: " + temp.number + ", Name: " + temp.name);
+                temp = temp.next;
             }
         }
+    }
 
-        public void display()
-        {
-            node temp=null;
-            if(head==null)
-            {
-                System.out.println("not exist");
-            }
-            else
-            {
-                while(temp!=null)
-                {
-                    System.out.println(temp.name+temp.number);
-                    temp=temp.next;
-                }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        NameLinked n = new NameLinked();
 
-            }
-        }
-
-        public static void main(String[] args)
-        {
-            Scanner sc=new Scanner(System.in);
-            NameLinked n=new NameLinked();
-
-            n.creation();
-            n.display();
-        }
+        System.out.println("Enter student records:");
+        n.creation();
+        n.creation();
+        n.creation();
         
-    
-                        }
+        System.out.println("Displaying student records:");
+        n.display();
+    }
+}
