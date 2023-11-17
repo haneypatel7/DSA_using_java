@@ -84,6 +84,20 @@ public class circularll {
 
             }
         }
+
+        public void deletefirst()
+        {
+
+            if(head==null)
+            {
+                System.out.println("list is empty");
+            }
+            else
+            {
+                head=head.next;
+                System.out.println("First element deleted");
+            }
+        }
         
 
         public static void main(String[] args)
@@ -97,6 +111,7 @@ public class circularll {
             System.out.println("press 1 to insert data first position");
             System.out.println("press 2 to insert data last position");
             System.out.println("press 3 to display data");
+            System.out.println("press 4 to delete last element");
             ch=sc.nextInt();
             switch(ch)
             {
@@ -115,6 +130,12 @@ public class circularll {
                 case 3:
                 {
                     cll.display();
+                    break;
+                }
+
+                case 4:
+                {
+                    cll.deletefirst();
                     break;
                 }
 
