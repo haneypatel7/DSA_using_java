@@ -4,9 +4,11 @@ public class r2 {
 
     public int sum(int a)
     {
+        
         if(a<=0)
         {
             return 0;
+
         }
         else
         {
@@ -25,6 +27,7 @@ public class r2 {
 
             System.out.println("value of enter number sum is:"+ans);
 
+            sc.close();
     }
     
                 }
