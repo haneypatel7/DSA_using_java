@@ -46,7 +46,6 @@ static class node
         preorder(root.left);
         preorder(root.right);
         
-        
     }
     }
 

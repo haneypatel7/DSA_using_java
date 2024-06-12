@@ -1,0 +1,36 @@
+declare
+	vname varchar(30);
+    vid integer(10);
+    cursor cursor_name(var_id integer:=20) is
+    select customerid,customername from customers
+    where customerid<var_id;
+    
+begin
+	open cursor_name;
+    loop
+    fetch cursor_name into vid,vname;
+    exit when cursor_name%notfound;
+    dbms_output.put_line(vid||' '||vname);
+    
+    end loop;
+    close cursor_name;
+    end;
+
+
+
+.//////
+
+declare
+	vid number(20);
+	vname varchar(20);
+	cusror ecur IS select customerid,customername from customers where cusromerid<=2;
+
+begin
+	open ecur;
+	loop
+	fetch ecur into vid,vname;
+	exit when ecur%notfound;
+	dbms_output.put_line(vname||''||vid);
+	end loop;
+	close ecur;
+end;

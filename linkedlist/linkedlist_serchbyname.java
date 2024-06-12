@@ -1,4 +1,4 @@
-package linkedlist;
+
 import java.util.Scanner;
 
 class linkedlist_serchbyname
